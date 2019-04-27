@@ -33,6 +33,11 @@
   return dispatch_get_main_queue();
 }
 
++ (BOOL)requiresMainQueueSetup
+{
+    return YES;
+}
+
 RCT_EXPORT_VIEW_PROPERTY(permissions, NSStringArray);
 RCT_EXPORT_VIEW_PROPERTY(loginBehavior, NSNumber);
 RCT_EXPORT_MODULE();
